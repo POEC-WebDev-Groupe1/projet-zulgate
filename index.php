@@ -11,142 +11,154 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
 </head>
 <body>
-    <div class="container-fluid pl-0">
-        <div class="row">
-            <div class="col-md-12 w-auto bg-light">
-                <nav class="navbar sticky-top">
-                    <a class="navbar-brand" href="#">Zulgate</a>
-                    <ul class="nav justify-content-end">
-                        <li>
-                            <a class="nav-link" href="#"><i class="fa fa-envelope-o"></i></a>
-                        </li>
-                        <li>
-                            <a class="nav-link" href="#">Se connecter</a>
-                        </li>
-                    </ul>
-                </nav>
-            </div>
-        </div>
+    <div class="col-md-12 sticky-top bg-light shadow">
+        <nav class="navbar">
+            <a class="navbar-brand" href="#">Zulgate</a>
+            <ul class="nav justify-content-end">
+                <li>
+                    <a class="nav-link" href="#"><i class="fa fa-envelope-o"></i></a>
+                </li>
+                <li>
+                    <a class="nav-link" href="connect.php">Se connecter</a>
+                </li>
+            </ul>
+        </nav>
+    </div>
 <!--    fin row header-->
-    <div class="container-fluid">
-        <div class="row">
-            <nav class="col-md-2 bg bg-light mh-100">
+
+        <div class="row m-0">
+            <div class="col-md-2 bg-light">
+            <nav class="fixed-left d-none d-md-block bg-light sidebar pt-2 h-100">
                 <div class="sidebar-sticky">
-                    <a class="nav flex-column">
-                        <a class="sidebar-search">
-                            <div class="input-group custom-search-form">
+                    <ul class="nav">
+                        <li class="sidebar-search mx-3">
+                            <a class="input-group input-group-sm">
                                 <input type="text" class="form-control" placeholder="Recherche...">
                                 <span class="input-group-btn">
                                     <button class="btn btn-default" type="button">
                                         <i class="fa fa-search"></i>
                                     </button>
                                 </span>
-                            </div>
-                        </a>
-                        <a class="nav-link dropdown">
-                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Afficher les Liens</a>
+                            </a>
+                        </li>
+                        <li class="dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Afficher Liens</a>
                             <div class="dropdown-menu">
                                 <a class="dropdown-item" href="#">Action</a>
                                 <a class="dropdown-item" href="#">Another action</a>
                                 <a class="dropdown-item" href="#">Something else here</a>
-                                <div class="dropdown-divider"></div>
-                                <a class="dropdown-item" href="#">Separated link</a>
                             </div>
-                        </a>
-                        <a>
+                        </li>
+                        <li>
                             <a class="nav-link" href="#">Tags</a>
-                        </a>
-                    </a>
+                        </li>
+                    </ul>
                 </div>            
             </nav>
-<!--        fin menu gauche-->
-                    <div class="col-sm">
-                        <div class="card-body">
-                            <h5 class="card-title">Liens</h5>
-                            <p class="card-text">Donec id elit non mi porta gravida at eget metus. Etiam porta sem malesuada magna mollis euismod.</p>
-                        </div>
-                    </div>
-                    <div class="col-sm">
-                        <div class="card-body">
-                            <h5 class="card-title">Liens</h5>
-                            <p class="card-text">Donec id elit non mi porta gravida at eget metus. Etiam porta sem malesuada magna mollis euismod.</p>
-                        </div>
-                    </div>
-                    <div class="col-sm">
-                        <div class="card-body">
-                            <h5 class="card-title">Liens</h5>
-                            <p class="card-text">Donec id elit non mi porta gravida at eget metus. Etiam porta sem malesuada magna mollis euismod.</p>
-                        </div>
-                    </div>
-            <div class="col-sm">
-                        <div class="card-body">
-                            <h5 class="card-title">Liens</h5>
-                            <p class="card-text">Donec id elit non mi porta gravida at eget metus. Etiam porta sem malesuada magna mollis euismod.</p>
-                        </div>
-                    </div>
-                    <div class="col-sm">
-                        <div class="card-body">
-                            <h5 class="card-title">Liens</h5>
-                            <p class="card-text">Donec id elit non mi porta gravida at eget metus. Etiam porta sem malesuada magna mollis euismod.</p>
-                        </div>
-                    </div>
             </div>
-            <div class="row">
-                <nav class="col-md-2 bg bg-light mh-100">
-                <div class="sidebar-sticky">
-                    <a class="nav flex-column">
-                        <a class="sidebar-search">
-
-                        </a>
-                        <a class="nav-link dropdown">
- 
-                        </a>
-                        <a>
-
-                        </a>
-                    </a>
-                </div>            
-            </nav>
 <!--        fin menu gauche-->
-                    <div class="col-sm">
-                        <div class="card-body">
-                            <h5 class="card-title">Liens</h5>
-                            <p class="card-text">Donec id elit non mi porta gravida at eget metus. Etiam porta sem malesuada magna mollis euismod.</p>
+            <div class="col-md-10 mr-0">
+                <div class="container-fluid">
+                    <div class="col-md-3 float-left">
+                        <div class="card border-secondary my-3">
+                            <div class="card-header">Titre lien</div> 
+                            <div class="card-body">
+                                <p class="card-text font-weight-light">Donec id elit non mi porta gravida at eget metus. Etiam porta sem malesuada magna mollis euismod.</p>
+                                <a href="#" class="btn btn-outline-primary">Détail</a>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-sm">
-                        <div class="card-body">
-                            <h5 class="card-title">Liens</h5>
-                            <p class="card-text">Donec id elit non mi porta gravida at eget metus. Etiam porta sem malesuada magna mollis euismod.</p>
+                    <div class="col-md-3 float-left">
+                        <div class="card border-secondary my-3">
+                            <div class="card-header">Titre lien</div> 
+                            <div class="card-body">
+                                <p class="card-text font-weight-light">Donec id elit non mi porta gravida at eget metus. Etiam porta sem malesuada magna mollis euismod.</p>
+                                <a href="#" class="btn btn-outline-primary">Détail</a>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-sm">
-                        <div class="card-body">
-                            <h5 class="card-title">Liens</h5>
-                            <p class="card-text">Donec id elit non mi porta gravida at eget metus. Etiam porta sem malesuada magna mollis euismod.</p>
+                    <div class="col-md-3 float-left">
+                        <div class="card border-secondary my-3">
+                            <div class="card-header">Titre lien</div> 
+                            <div class="card-body">
+                                <p class="card-text font-weight-light">Donec id elit non mi porta gravida at eget metus. Etiam porta sem malesuada magna mollis euismod.</p>
+                                <a href="#" class="btn btn-outline-primary">Détail</a>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-sm">
-                        <div class="card-body">
-                            <h5 class="card-title">Liens</h5>
-                            <p class="card-text">Donec id elit non mi porta gravida at eget metus. Etiam porta sem malesuada magna mollis euismod.</p>
+                    <div class="col-md-3 float-left">
+                        <div class="card border-secondary my-3">
+                            <div class="card-header">Titre lien</div> 
+                            <div class="card-body">
+                                <p class="card-text font-weight-light">Donec id elit non mi porta gravida at eget metus. Etiam porta sem malesuada magna mollis euismod.</p>
+                                <a href="#" class="btn btn-outline-primary">Détail</a>
+                            </div>
                         </div>
                     </div>
-                    <div class="col-sm">
-                        <div class="card-body">
-                            <h5 class="card-title">Liens</h5>
-                            <p class="card-text">Donec id elit non mi porta gravida at eget metus. Etiam porta sem malesuada magna mollis euismod.</p>
+                    <div class="col-md-3 float-left">
+                        <div class="card border-secondary my-3">
+                            <div class="card-header">Titre lien</div> 
+                            <div class="card-body">
+                                <p class="card-text font-weight-light">Donec id elit non mi porta gravida at eget metus. Etiam porta sem malesuada magna mollis euismod.</p>
+                                <a href="#" class="btn btn-outline-primary">Détail</a>
+                            </div>
                         </div>
                     </div>
+                    <div class="col-md-3 float-left">
+                        <div class="card border-secondary my-3">
+                            <div class="card-header">Titre lien</div> 
+                            <div class="card-body">
+                                <p class="card-text font-weight-light">Donec id elit non mi porta gravida at eget metus. Etiam porta sem malesuada magna mollis euismod.</p>
+                                <a href="#" class="btn btn-outline-primary">Détail</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 float-left">
+                        <div class="card border-secondary my-3">
+                            <div class="card-header">Titre lien</div> 
+                            <div class="card-body">
+                                <p class="card-text font-weight-light">Donec id elit non mi porta gravida at eget metus. Etiam porta sem malesuada magna mollis euismod.</p>
+                                <a href="#" class="btn btn-outline-primary">Détail</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 float-left">
+                        <div class="card border-secondary my-3">
+                            <div class="card-header">Titre lien</div> 
+                            <div class="card-body">
+                                <p class="card-text font-weight-light">Donec id elit non mi porta gravida at eget metus. Etiam porta sem malesuada magna mollis euismod.</p>
+                                <a href="#" class="btn btn-outline-primary">Détail</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 float-left">
+                        <div class="card border-secondary my-3">
+                            <div class="card-header">Titre lien</div> 
+                            <div class="card-body">
+                                <p class="card-text font-weight-light">Donec id elit non mi porta gravida at eget metus. Etiam porta sem malesuada magna mollis euismod.</p>
+                                <a href="#" class="btn btn-outline-primary">Détail</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 float-left">
+                        <div class="card border-secondary my-3">
+                            <div class="card-header">Titre lien</div> 
+                            <div class="card-body">
+                                <p class="card-text font-weight-light">Donec id elit non mi porta gravida at eget metus. Etiam porta sem malesuada magna mollis euismod.</p>
+                                <a href="#" class="btn btn-outline-primary">Détail</a>
+                            </div>
+                        </div>
+                    </div>                   
+                </div>
             </div>
         </div>
 <!--        fin section-->
-        <footer class="row ">
-            <nav class="navbar fixed-bottom navbar-light bg-light">
-                <a class="nav" href="#">Crédit</a>
-            </nav>
+
+        <footer class="footer fixed-bottom bg-light font-weight-light">
+            <div class="container">
+                <p class="text-center mb-0" href="#">Crédit - Mentions - RSS</p>
+            </div>
         </footer>
-    </div>
 <!--    fin container-->
 </body>
 </html>
