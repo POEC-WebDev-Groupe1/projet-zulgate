@@ -19,7 +19,7 @@ class Links
     /**
      * @ORM\Column(type="string", length=255)
      */
-    private $Nom;
+    private $Name;
 
     /**
      * @ORM\Column(type="text")
@@ -36,14 +36,14 @@ class Links
         return $this->id;
     }
 
-    public function getNom(): ?string
+    public function getName(): ?string
     {
-        return $this->Nom;
+        return $this->Name;
     }
 
-    public function setNom(string $Nom): self
+    public function setName(string $Name): self
     {
-        $this->Nom = $Nom;
+        $this->Name = $Name;
 
         return $this;
     }
