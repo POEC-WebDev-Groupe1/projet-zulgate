@@ -1,0 +1,23 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}
+    Accueil
+{% endblock %}
+
+{% block body %}
+    {% for link in links %}
+        <ul>
+            <li>
+                <a href="{{ path("view", {id: link.id}) }}">
+                    {{ link.name }}
+                </a>
+            </li>
+        </ul>
+    {% endfor %}
+    <div class="row mt-5">
+        <div class="col-md-3 text-center"></div>
+            <a href="{{ path("add") }}">
+            Rajouter un lien
+            </a>
+    </div>
+{% endblock %}
