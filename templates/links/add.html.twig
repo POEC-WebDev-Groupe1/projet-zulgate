@@ -1,7 +1,12 @@
 {% extends 'base.html.twig' %}
 
+{% block title %}
+    Edition du lien
+{% endblock %}
+
 {% block body %}
-    <form>
+
+    <div class="col-md-6 my-3 float-left">
         <div class="form-group">
             {{ form_start(form) }}
             {{ form_errors(form) }}
@@ -9,13 +14,6 @@
             <button type="submit" class="btn btn-primary">Valider</button>
             {{ form_end(form) }}
         </div>
-        
-    </form>
-    
-    <p>
-        <a href="{{ path("home") }}">
-            Accueil
-        </a>
-    </p>
-    
+    </div>
+
 {% endblock %}
