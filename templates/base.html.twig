@@ -3,7 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+        
+        {# le titre de la page doit être rajouté avant le tiret #}
         <title>{% block title %}{% endblock %} - Zulgate</title>
 
         {% block stylesheets %}
@@ -12,6 +13,7 @@
         {% endblock %}
     </head>
     <body>
+        {# Header #}
         <div class="col-md-12 sticky-top bg-light shadow">
             <nav class="navbar">
                 <a class="navbar-brand" href="/">Zulgate</a>
@@ -27,6 +29,7 @@
                 </ul>
             </nav>
         </div>
+        {# Menu gauche #}
         <div class="row m-0">
             <div class="col-md-2 bg-light">
             <nav class="fixed-left d-none d-md-block bg-light sidebar pt-2 h-100">
@@ -49,13 +52,15 @@
                 </div>            
             </nav>
             </div>
+            {# contenant #}
             <div class="col-md-10 mr-0">
                 <div class="container-fluid">
                   {% block body %}{% endblock %}
                 </div>
             </div>
         </div>
-        <footer class="footer fixed-bottom bg-light font-weight-light">
+        {# footer #}
+        <footer class="footer bg-light font-weight-light">
             <div class="container">
                 <p class="text-center mb-0" href="#">Crédit - Mentions</p>
             </div>

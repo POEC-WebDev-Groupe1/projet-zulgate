@@ -1,9 +1,11 @@
 {% extends 'base.html.twig' %}
 
+{# le titre est rajouté devant - Zulgate #}
 {% block title %}
     Détails du lien
 {% endblock %}
 
+{# Détail du lien #}
 {% block body %}
     <div class="col-md-12">
         <div class="card border-secondary my-3">
@@ -24,6 +26,9 @@
                 <p>
                 <a class="btn btn-outline-primary" href="{{ path('edit', {id : link.id}) }}">
                     Editer
+                </a>
+                 <a class="btn btn btn-outline-danger" href="{{ path('erase', {id : link.id}) }}">
+                    Effacer le lien
                 </a>
                 </p>
             </div>
