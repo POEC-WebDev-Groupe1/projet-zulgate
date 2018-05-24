@@ -3,24 +3,68 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
+        
+        {# le titre de la page doit être rajouté avant le tiret #}
         <title>{% block title %}{% endblock %} - Zulgate</title>
 
         {% block stylesheets %}
             <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
         {% endblock %}
     </head>
     <body>
-        <div class="container">
-            <div class="row mt-5">
-                <div class="col-md-12 text-center">
-                    <h1>Projet Zulgate</h1>
+        {# Header #}
+        <div class="col-md-12 sticky-top bg-light shadow">
+            <nav class="navbar">
+                <a class="navbar-brand" href="/">Zulgate</a>
+                <ul class="nav justify-content-end">
+                    <li>
+                        <a class="nav-link" href="#">
+                            <i class="fa fa-envelope-o"></i>
+                        </a>
+                    </li>
+                    <li>                            
+                        <a class="nav-link" href="#">Se connecter</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        {# Menu gauche #}
+        <div class="row m-0">
+            <div class="col-md-2 bg-light">
+            <nav class="fixed-left d-none d-md-block bg-light sidebar pt-2 h-100">
+                <div class="sidebar-sticky">
+                    <ul class="nav">
+                        <li class="sidebar-search mx-3">
+                            <a class="input-group input-group-sm">
+                                <input type="text" class="form-control" placeholder="Recherche...">
+                                <span class="input-group-btn">
+                                    <button class="btn btn-default" type="button">
+                                        <i class="fa fa-search"></i>
+                                    </button>
+                                </span>
+                            </a>
+                        </li>
+                        <li>
+                            <a class="nav-link" href="{{ path("add") }}">Rajouter un lien</a>
+                        </li>
+                    </ul>
+                </div>            
+            </nav>
+            </div>
+            {# contenant #}
+            <div class="col-md-10 mr-0">
+                <div class="container-fluid">
+                  {% block body %}{% endblock %}
                 </div>
             </div>
-            <div class="row mt-5">
-                {% block body %}{% endblock %}
-            </div>
         </div>
+        {# footer #}
+        <footer class="footer bg-light font-weight-light">
+            <div class="container">
+                <p class="text-center mb-0" href="#">Crédit - Mentions</p>
+            </div>
+        </footer>
     
         {% block javascripts %}
             <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

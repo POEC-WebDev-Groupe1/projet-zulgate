@@ -2,10 +2,9 @@
 
 {# le titre est rajouté devant - Zulgate #}
 {% block title %}
-    Edition du lien
+    Effacer le lien
 {% endblock %}
 
-{# Formulaire pour rajouter et éditer #}
 {% block body %}
 
     <div class="col-md-6 my-3 float-left">
@@ -13,9 +12,10 @@
             {{ form_start(form) }}
             {{ form_errors(form) }}
             {{ form_rest(form) }}
-            <button type="submit" class="btn btn-primary">Valider</button>
-            {{ form_end(form) }}
-        </div>
+            <button type="submit" class="btn btn-outline-danger">Effacer</button>
+            <a class="btn btn-outline-primary" href="/">Annuler</a>
+            {{ form_end(form) }}           
+        </div>        
     </div>
 
 {% endblock %}
